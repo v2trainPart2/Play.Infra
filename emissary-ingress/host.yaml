@@ -1,0 +1,10 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Host
+metadata:
+  name: v2train-host
+spec:
+  hostname: v2train.eastus.cloudapp.azure.com
+  acmeProvider:
+    email: admin@v2train.com
+  tlsSecret:
+    name: v2train-tls
